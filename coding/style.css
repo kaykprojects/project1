@@ -1,0 +1,258 @@
+
+
+body {
+  background-color: rgb(202, 202, 241);
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family:monospace, sans-serif;
+}
+
+
+.beg-anim {
+  max-width: 1024px;
+  height: auto;
+  margin: auto;
+  display: flex;
+
+}
+
+#play {
+  width: 80%;
+  margin: auto;
+}
+
+.screen {
+  width: 50%;
+  min-width: 1024px;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  visibility: hidden;
+  position: relative;  
+  cursor: url('img/hand_2.png'), pointer;
+}
+.refresh {
+  width: 150px;
+  position: absolute;
+  top: 100px;
+  right: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-family: monospace;
+}
+
+
+.control, .stop {
+  border: 1px solid black;
+  width: 250px;
+  border-radius: 10px;
+  background-color:#88f7f7;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.control:hover,
+.stop:hover,
+.refresh:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+  transition: transform 0.5s ease-out;  
+}
+
+.control:active,
+.stop:active {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+
+.stop {
+  color: black;
+  border: 1px solid black;
+  width: 250px;
+  background-color: orange;
+}
+
+.greet {
+  position: absolute;
+  top: 15%;
+  color: #fff;
+  font-size: 1.3em;
+  left: 15%;
+  font-size: 2.2em;
+}
+
+.options {
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  justify-content: space-between;
+  width: 65%;
+  font-size: 2em;
+}
+
+.option1:hover,
+.option2:hover {
+  background-color: #88f7f7;
+  border-radius: 3px;
+  padding: 10px;  
+  color: #000;
+}
+
+.option1:active,
+.option2:active {
+  transform: scale(0.95);
+}
+
+.people-list {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  left: 13%;
+  top: 20%;
+  right: 10%;
+  width: 70%;
+  visibility: hidden;
+}
+
+.people-list img {
+  display: block;
+  width: 100%;
+}
+
+.people {
+  color: #fff;
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin: 1.5%;
+  border-radius: 5px;
+  padding: 2%;
+  width: 25%;
+ 
+}
+
+
+.people:hover,
+.people:active {
+  transform: scale(1.1);
+  background-color: #88f7f7;
+  color: black;       
+}
+
+
+.call {
+  position: absolute;
+  width: 20%;
+  top: 40%;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.call img {
+  margin: 20%;
+}
+
+
+.call img:hover {
+  background-color: #008000;
+  border-radius: 50%;
+  padding: 10%;
+  font-size: 0.8em;
+}
+
+
+
+.call img:active {
+  animation: pound ease-in-out backwards;
+}
+
+
+.shoppingList p {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+
+.shoppingList li {
+  color: white;
+  position: absolute;
+  top:30%;
+  left: 30%;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.shoppingList span:hover {
+  background-color: #008000;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+
+.ordering~p {
+  font-size: 1em;
+  margin-top: 100px;
+  width: 100%;
+}
+
+
+.power:hover {
+  fill: red;
+  transition: all 0.5s ease;
+}
+
+.power:active {
+  fill: #fff;
+  transition: all 0.5s ease-out;
+}
+
+
+.description p {
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  top: 120%;
+  left: 15%;
+  line-height: 150%;
+}
+
+.description span {
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  bottom: -110%;
+  right: 15%;
+}
+
+footer {
+  position: absolute;
+  bottom: -120%;
+  right: 15%;
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

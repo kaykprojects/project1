@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Wearable</title>
+</head>
+<body>
+  <button class="refresh" onClick="window.location.reload();">Start All Over</button>
+  <div class="control">
+    <p>Click here to see what Jane can do today.</p>    
+  </div>
+  <div class="stop">
+    <p>Skip the Animated Video</p>
+  </div>
+  <div class="beg-anim">
+    <video id="play" src="img/grandma.mp4"></video>
+  </div>
+
+  <div class="screen">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 294 406">
+      <defs class="svgStyle">
+        <style>.cls-1{fill:#ffe27c;}.cls-3{fill:url(#linear-gradient);}          
+        </style>
+        <linearGradient id="linear-gradient" x1="139.35" y1="30.5" x2="153.65" y2="30.5" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fff"/><stop offset="1"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="174.85" y1="35.5" x2="182.15" y2="35.5"></linearGradient>
+
+      </defs>
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+          <rect class="cls-1" x="0.33" y="0.33" width="293.35" height="405.35" rx="14.35"/>
+          <path d="M279.33.65a14,14,0,0,1,14,14V391.33a14,14,0,0,1-14,14H14.67a14,14,0,0,1-14-14V14.67a14,14,0,0,1,14-14H279.33m0-.65H14.67A14.67,14.67,0,0,0,0,14.67V391.33A14.67,14.67,0,0,0,14.67,406H279.33A14.67,14.67,0,0,0,294,391.33V14.67A14.67,14.67,0,0,0,279.33,0Z"/>
+          <rect x="18.46" y="54.39" width="255.07" height="175.54" rx="19.3"/>
+          <path d="M254.23,54.74a19,19,0,0,1,19,18.95V210.63a19,19,0,0,1-19,19H37.77a19,19,0,0,1-19-19V73.69a19,19,0,0,1,19-18.95H254.23m0-.7H37.77A19.65,19.65,0,0,0,18.12,73.69V210.63a19.64,19.64,0,0,0,19.65,19.64H254.23a19.64,19.64,0,0,0,19.65-19.64V73.69A19.65,19.65,0,0,0,254.23,54Z"/>
+          <path class="power" fill="#fff" d="M41,285.38c-15.26,0-27.68-11-27.68-24.44S25.74,236.49,41,236.49s27.68,11,27.68,24.45S56.26,285.38,41,285.38Z"/>
+          <path d="M41,236.81c15.09,0,27.36,10.82,27.36,24.13S56.09,285.06,41,285.06s-27.36-10.82-27.36-24.12S25.91,236.81,41,236.81m0-.64c-15.46,0-28,11.09-28,24.77S25.54,285.7,41,285.7s28-11.08,28-24.76-12.54-24.77-28-24.77Z"/>
+          <circle cx="146" cy="31" r="16.65"/>
+          <path d="M146,14.7A16.3,16.3,0,1,1,129.7,31,16.32,16.32,0,0,1,146,14.7m0-.7a17,17,0,1,0,17,17,17,17,0,0,0-17-17Z"/>
+          <circle class="cls-3" cx="146.5" cy="30.5" r="7.15"/>
+          <path d="M146.5,23.7a6.8,6.8,0,1,1-6.8,6.8,6.81,6.81,0,0,1,6.8-6.8m0-.7a7.5,7.5,0,1,0,7.5,7.5,7.5,7.5,0,0,0-7.5-7.5Z"/>
+          <circle class="cls-4" cx="178.5" cy="35.5" r="3.65" fill="grey"/>
+          <path d="M178.5,32.2a3.3,3.3,0,1,1-3.3,3.3,3.3,3.3,0,0,1,3.3-3.3m0-.7a4,4,0,1,0,4,4,4,4,0,0,0-4-4Z"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="options">
+      <p class="option1">Call People</p>    
+      <p class="option2">Check shopping list</p>
+    </div>   
+
+    <ul class="shoppingList">
+
+    </ul>
+
+    
+
+    <div class="call">
+      <img class="call-on" src="img/call.svg" alt="">
+      <img class="call-video" src="img/video.svg" alt="">
+    </div>
+
+    <div class="people-list">      
+      <div class="people">
+        <img class="son" src="img/son.svg" alt="son"/>
+        <p class="son">My Son</p>
+      </div>
+      <div class="people">      
+       <img class="friend" src="img/friend.svg" alt="friend"/>
+       <p class="friend">My friend Mary</p>
+      </div>
+      <div class="people">      
+        <img class="doctor" src="img/doctor.svg" alt="doctor"/>
+        <p class="doctor">Doctor Long</p>
+      </div>        
+    </div>       
+    
+  </div>
+
+  <div class="description">
+    <p>This is a combined animated video and interactive web interface project. This short project was made to show how an average citizen above 70 years of age immensely benefits from using a wearable robot and a user-friendly home screen powered by AI technology for her day-to-day life. This project was inspired by the video “Wearable robotics for sustainable welfare” from TEDx Talks by Nicola Vitiello, featuring fascinating wearable robotics for humans (Vitiello, 2018). This supports my argument regarding how AI could provide humans with convenient ways of living as well as improved health-related quality of life with their smart functions in near future. 
+    <br><br>     
+    The depicted character is Jane. Jane has issues with her untreatable leg muscles and knees due to her genetics and age. She was not able to walk properly until last year. Someone always had to assist her even for simple tasks at home. She is now able to walk freely without anyone else’s help. Thanks to the wearable robot she received as her birthday present last year from her son. She can go out for shopping if she wants to, and she can walk for more than three hours without any pain everyday. 
+    <br><br>   
+    Every morning, Jane walks to her home screen in her dining room and turns it on. The massive interactive smart device with big photos and letters enables her to easily read and see the pictures and words on the screen. She can call people using the machine, and she can easily do one click grocery shopping as the bot is connected to the fridge that also has a small computer in it that sends food stock information everyday. Once ordered, the confirmation for payment and delivery are displayed so that Jane knows the status of the order straight away. AI can be used in a way that could open a person's possibilities of getting his or her normal life back that would not have been possible without the help of the technology.</p>
+    <span>Animation, Sound & Web Interface design by K H Kim</span>
+
+    <footer> Reference: Vitiello, N. (2018). Wearable robotics for sustainable welfare. TEDxNapoli. Retrieved March 
+      06, 2021, from https://www.youtube.com/watch?v=v0MhVXPNx8U </footer>
+    
+  </div>
+  
+  
+
+  <script>
+    const control = document.querySelector('.control');
+    const stop = document.querySelector('.stop');
+    const play = document.querySelector('#play');
+    const screen = document.querySelector('.screen');
+    const peopleList = document.querySelector('.people-list');
+    const people = peopleList.children;
+    const call = document.querySelector('.call');
+    const options = document.querySelector('.options');
+    const power = document.querySelector('.power');
+    const shoppingList = document.querySelector('.shoppingList');
+    const description = document.querySelector('.description');
+    const shoppingItems = ['Milk', 'Orange Juice', 'Lettuce', 'Sausages', 'Olive Oil', 'Rice'];
+    const cancel = document.createElement('audio'); // for cancelling sound
+
+
+
+
+    control.addEventListener('click', () => {
+      play.parentNode.style.display = "flex";
+      screen.style.visibility = 'hidden';
+      play.autoplay = true;
+      play.load();
+      peopleList.style.visibility = 'hidden';
+      call.style.visibility = 'hidden';
+      setTimeout(initialize, 22000); 
+    });
+
+
+    stop.addEventListener('click', () => {
+      play.autoplay = false;
+      play.pause();
+      initialize();
+      options.style.display = 'block';
+      shoppingList.innerHTML = '';
+      clearBackground();
+     
+    })
+
+    
+
+    function initialize() {
+        let phrase = document.createElement('p');
+        play.parentNode.style.display = 'none';
+        screen.style.visibility = 'visible';
+        phrase.className = 'greet';
+        screen.appendChild(phrase).innerHTML = "<p>Hi Jane, what would you like to do?</p>";
+        description.style.display = 'none';    
+        peopleList.style.visibility = 'hidden';
+        call.style.visibility = 'hidden';         
+    } 
+
+    function removeTitle() {
+      for(let greet of screen.children) {
+        if(greet.className === 'greet') {
+          screen.removeChild(greet);
+        }
+      }
+      // if(screen.lastElementChild.className === 'greet') {
+      //     screen.removeChild(screen.lastElementChild);
+      // }
+    }
+
+
+    options.addEventListener('click', (e) => {
+      const button = e.target;
+      if(button.className === 'option1') {
+        removeTitle();                 
+        options.style.display = 'none';
+        peopleList.style.visibility = 'visible';
+        call.style.visibility = 'visible';
+         
+      }
+       else if(button.className === 'option2') {
+        removeTitle();                 
+        options.style.display = 'none';        
+        shoppingList.innerHTML = `<p class="ordered">Here is the shopping list. <br> You can order online now.</p><li class="ordered">${shoppingItems[Math.floor(Math.random()*shoppingItems.length)]} - <span class="ordering ordered">Order Now </span></li>`;
+        shoppingList.style.listStyle = 'none';
+        orderConfirmed();       
+      }
+      
+    });
+
+    function orderConfirmed() {
+      const confirmed = document.querySelector('.ordering');
+        confirmed.addEventListener('click', function() {
+          confirmed.style.backgroundColor = '#008000';
+          confirmed.style.border = 'none';
+          confirmed.style.borderRadius = '10px';
+          confirmed.style.padding = '5px';
+          setTimeout(() => {
+          confirmed.insertAdjacentHTML('afterend', `<p>Order Confirmed and Paid. Delivery tomorrow morning. </p>`);
+          power.animate([
+          { fill: 'green'},
+          { fill: 'white'}
+        ], {
+          duration: 1000,
+          iterations: 3
+        });
+        }, 3000)
+      });
+
+    }
+
+    
+
+
+  power.addEventListener('click', function() {
+    removeTitle();
+    peopleList.style.visibility = 'hidden';
+    call.style.visibility = 'hidden';
+    options.style.display = 'block';  
+    initialize();
+    shoppingList.innerHTML = '';
+    clearBackground();
+  }); 
+
+  function clearBackground() {
+    for(let j = 0; j < people.length; j++) {
+      people[j].style.backgroundColor = 'transparent';
+      people[j].style.color = '#fff';
+    }   
+  }
+
+
+
+  peopleList.addEventListener('click', (e) => {
+    const button = e.target;
+    clearButton(button);
+  })
+
+
+
+  function clearButton(button) {
+    for(let i = 0; i < people.length; i++) {
+      let element = people[i];
+      element.style.backgroundColor = 'transparent';
+      element.style.color = '#fff';
+    }
+    if((button.tagName === 'P' || button.tagName === 'IMG') && (button.parentNode.className !== 'next')) {
+      button.parentNode.style.backgroundColor = '#88f7f7';
+      button.parentNode.style.color = '#000';
+      button.parentNode.style.textAlign = 'center';
+      button.style.transition = '0.2s ease-out';
+      button.style.transform = 'scale(1.1)';
+    }
+
+    if(button.className === 'next') {
+      button.style.fill = 'red'
+    }      
+  }
+  
+  function ring() {
+    const ring= document.createElement('audio'); // for ringing sound
+    ring.src = 'sound/ring.wav';
+    screen.appendChild(ring);
+    ring.autoplay = true;
+    ring.volume = 0.3;
+    ring.load();
+  }
+
+  function cancelCall() {
+    setTimeout(function() {
+        cancel.src = 'sound/cancel.wav';
+        screen.appendChild(cancel);
+        cancel.autoplay = true;
+        cancel.load();
+      }, 5000);
+  }
+
+  call.addEventListener('click', (e) => {
+    const button = e.target;  
+    const callButtons = call.children;
+    tryAgain();
+    
+
+    for(let i = 0; i < callButtons.length; i++) {
+      let element = callButtons[i];
+      if(element.className === 'call-on') {
+        element.src = 'img/call.svg';
+      } else {
+        element.src = 'img/video.svg';
+      }
+      ring();     
+    } 
+    
+     
+    if(button.tagName === 'IMG') {
+      button.src = 'img/cancel.svg';
+      button.style.backgroundColor = 'transparent';       
+      button.style.backgroundRepeat = 'no-repeat';
+
+      cancelCall();
+      
+      button.animate([
+          { transform: 'scale(1.1)'},
+          { transform: 'scale(0.98'}
+        ], {
+          duration: 1000,
+          iterations: 5
+        });           
+    }
+
+    if(button.className === 'call-video') {      
+      const videoOn = document.querySelector('.cls-4');
+      videoOn.style.fill="#adff2f"
+      setTimeout(function() {
+        videoOn.style.fill="grey";        
+      }, 5000)
+    }     
+  });
+
+  function tryAgain() {   
+    setTimeout(function() {         
+         call.innerHTML += `<p>No Answer...</p>`;
+         call.style.color = '#fff';
+         call.lastElementChild.style.marginTop = '100px';
+       }, 5000);    
+    setTimeout(function() {
+      if(call.lastElementChild.tagName === 'P') {
+        call.removeChild(call.lastChild);
+        call.firstElementChild.src = 'img/call.svg';
+        call.firstElementChild.nextElementSibling.src = 'img/video.svg';
+      }
+    }, 7000);    
+  }
+
+
+  
+
+  
+
+  
+
+  
+  
+
+    
+      
+
+     
+    
+
+      
+     
+      
+    
+
+    
+
+    
+
+  </script>
+
+</body>
+</html>
